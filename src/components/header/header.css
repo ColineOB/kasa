@@ -1,0 +1,23 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 4% 0 4%;
+}
+
+.header-logo {
+    width: 210px;
+    height: 100%;
+}
+
+.header-menu {
+    display: flex;
+    list-style: none;
+    font-family: 'Montserrat';
+    font-weight: 500;
+}
+
+.header-menu a{
+  text-decoration: none; 
+  color: #FF6060;
+  margin-left: 40px;
+}

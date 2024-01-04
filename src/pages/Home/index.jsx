@@ -1,8 +1,8 @@
-
+import Banner from '../../components/banner/banner';
 
 function App() {
   return (
-    <div> page d'accueil</div>
+    <Banner />
   );
 }
 
