@@ -14,12 +14,14 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     <Router>
+      <div className='body-margin'>
       <Header />
       <Routes>
         <Route path='/' element={<Home />} />
         <Route path='/aPropos' element={<APropos />} />
         <Route path="*" element={<Error />} />
       </Routes>
+      </div>
       <Footer />
     </Router>
 

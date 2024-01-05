@@ -1,7 +1,6 @@
 .header {
     display: flex;
     justify-content: space-between;
-    padding: 20px 4% 0 4%;
 }
 
 .header-logo {
@@ -12,8 +11,6 @@
 .header-menu {
     display: flex;
     list-style: none;
-    font-family: 'Montserrat';
-    font-weight: 500;
 }
 
 .header-menu a{

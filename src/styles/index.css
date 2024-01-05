@@ -5,4 +5,20 @@
 
 body {
   margin: 0;
+  font-family: 'Montserrat';
+  font-weight: 500;
+}
+
+.body-margin {
+  padding: 20px 4% 0 4%;
+}
+
+.content {
+  display: flex;
+  gap: 3%;
+  margin-top: 30px;
+  padding: 0 3% 3% 3%;
+  background-color: #F6F6F6;
+  border-radius: 25px;
+  flex-wrap: wrap;
 }
