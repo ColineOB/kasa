@@ -1,0 +1,23 @@
+.collapse {
+    display: block;
+    margin: auto;
+    width: 80%;
+}
+
+.collapse-title {
+    display: flex;
+    border-radius: 5px;
+    margin-top: 30px;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 10px 0 10px;
+    height: 52px;
+    background-color: #FF6060;
+    color: white;
+}
+
+.collapse-title h2 {
+    font-family: 'Montserrat';
+    font-weight: 500;
+    font-size: 24px;
+}

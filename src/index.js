@@ -6,6 +6,7 @@ import Footer from './components/footer/footer';
 import Home from './pages/Home';
 import APropos from './pages/APropos/aPropos'
 import Error from './pages/Error/error';
+import Logement from './pages/Logement/logement';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 //fonts
 import "./assets/fonts/Montserrat-VariableFont_wght.ttf"
@@ -19,6 +20,7 @@ root.render(
       <Routes>
         <Route path='/' element={<Home />} />
         <Route path='/aPropos' element={<APropos />} />
+        <Route path='/logement/:id' element={<Logement />} />
         <Route path="*" element={<Error />} />
       </Routes>
       </div>
