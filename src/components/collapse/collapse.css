@@ -21,3 +21,9 @@
     font-weight: 500;
     font-size: 24px;
 }
+
+.collape-arrow {
+    font-size: 28px;
+    margin-right: 10px;
+    cursor: pointer;
+}

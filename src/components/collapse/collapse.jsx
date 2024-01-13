@@ -7,15 +7,15 @@ function Collapse({title, text}) {
     const [isOpen, SetIsOpen] = useState(false);
     
     return (
-        <div className='collapse'>
-            <div className='collapse-title'>
-                <h2>{title}</h2>
-                <FontAwesomeIcon onClick={SetIsOpen} icon={faChevronDown} />
-            </div>
-            <div className='collapse-text'>
-                <p>{text}</p>
-            </div>
-        </div>
+            <>
+                <div className='collapse-title'>
+                    <h2>{title}</h2>
+                    <FontAwesomeIcon className='collape-arrow' onClick={SetIsOpen} icon={faChevronDown} />
+                </div>
+                <div className='collapse-text'>
+                    <p>{text}</p>
+                </div>
+            </>
     )
 }
 export default Collapse
