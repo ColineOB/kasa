@@ -5,9 +5,8 @@ import { faChevronDown } from '@fortawesome/free-solid-svg-icons'
 
 function Collapse({title, text}) {
     const [isOpen, SetIsOpen] = useState(false);
-    
     return (
-            <>
+            <div>
                 <div className='collapse-title'>
                     <h2>{title}</h2>
                     <FontAwesomeIcon className='collape-arrow' onClick={SetIsOpen} icon={faChevronDown} />
@@ -15,7 +14,7 @@ function Collapse({title, text}) {
                 <div className='collapse-text'>
                     <p>{text}</p>
                 </div>
-            </>
+            </div>
     )
 }
 export default Collapse

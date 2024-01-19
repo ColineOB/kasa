@@ -22,3 +22,76 @@ body {
   border-radius: 25px;
   flex-wrap: wrap;
 }
+.profil {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #FF6060;
+  margin: 20px 0;
+}
+.profil h1 {
+  font-size: 36px;
+  margin: 0;
+  font-weight: initial;
+}
+
+.profil h2 {
+  font-size: 18px;
+  margin: 10px 0 0 0;
+  font-weight: initial;
+}
+
+.profil_G {
+  align-items: center;
+  display: flex;
+  font-size: 18px;
+}
+.profil_G--name {
+  width: 100px;
+  text-align: right;
+  margin-right: 10px;
+}
+
+.profil_G--imgProfil {
+  border-radius: 100%;
+  width: auto;
+  height: 64px;
+}
+
+.collapses {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 10px;
+}
+
+
+.rating {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.rating_tags {
+  display: flex;
+}
+
+.rating_tags--tag {
+  display: block;
+  background-color: #FF6060;
+  color: white;
+  font-size: 14px;
+  padding: 2px 25px;
+  border-radius: 10px;
+  margin-right: 10px;
+}
+.star {
+  height: 24px;
+  margin-left: 10px;
+}
+.star_rate {
+  color: #FF6060;
+}
+
+.star_void {
+  color: #E3E3E3;
+}
