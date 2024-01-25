@@ -95,3 +95,27 @@ body {
 .star_void {
   color: #E3E3E3;
 }
+
+/* Page Error */
+
+.error {
+  color: #FF6060;
+  text-align: center;
+  margin: 100px 0 100px 0;
+}
+
+.error h1 {
+  font-size: 288px;
+  margin: 0;
+}
+
+.error p {
+  font-size: 36px;
+  margin: 50px 0 80px 0;
+}
+
+.error a, .error  a:visited,.error a:hover {
+  color: black;
+  font-size: 18px;
+  margin: 0 0 50px 0;
+}

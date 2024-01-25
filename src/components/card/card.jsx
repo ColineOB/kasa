@@ -9,8 +9,9 @@ function Card(props) {
     return (
         <div className='card'>
         <Link to={"/logement?id="+ id}>
-            <p>{title}</p>
             <img src={cover} alt="cover" />
+            <div className='gradient'></div>
+            <p>{title}</p>
         </Link>
         </div>
     )
