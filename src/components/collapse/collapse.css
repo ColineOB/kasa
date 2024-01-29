@@ -5,6 +5,8 @@
 }
 
 .collapse-title {
+    position: relative;
+    z-index: 10;
     display: flex;
     border-radius: 5px;
     margin-top: 30px;
@@ -26,4 +28,27 @@
     font-size: 28px;
     margin-right: 10px;
     cursor: pointer;
+    transform: rotate(0deg);
+    transition: transform 300ms;
+}
+.close{
+    transform: rotate(180deg);
+    transition: transform 300ms;
+}
+
+  .collapse-text {
+    transition: all 300ms;
+    white-space: pre-line;
+    opacity: 1;
+    transform: translateY(0%);
+    max-height: 500px;
+  }
+
+.collapse-text_close {
+    transition: all 300ms;
+    opacity: 0;
+    white-space: pre-line;
+    transform: translateY(-120%);
+    max-height: 0;
+    overflow: hidden;
 }

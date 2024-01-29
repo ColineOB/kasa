@@ -1,10 +1,18 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import './carousel.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faChevronLeft, faChevronRight } from '@fortawesome/free-solid-svg-icons'
 
 const Carousel = ({ images }) => {
   const [activeIndex, setActiveIndex] = useState(0);
+  const [lengthImg, setLengthImg] = useState(false);
+
+  useEffect(() => {
+    if (images.length > 1) {
+      setLengthImg(true)
+    }
+  }, [images.length]);
+
   const nextSlide = () => {
     setActiveIndex((prevIndex) =>
       prevIndex === images.length - 1 ? 0 : prevIndex + 1
@@ -15,7 +23,6 @@ const Carousel = ({ images }) => {
       prevIndex === 0 ? images.length - 1 : prevIndex - 1
     );
   };
-  const text = activeIndex + 1 + "/" + images.length + 1
 
   return (
     <div className="carousel">
@@ -25,8 +32,13 @@ const Carousel = ({ images }) => {
         className="carousel_img"
       ></img>
       <p className='carousel_nbr'>{activeIndex + 1}/{images.length}</p>
-      <FontAwesomeIcon onClick={prevSlide} className="carousel_btn carousel_btn--prev fa-5x" icon={faChevronLeft} />
-      <FontAwesomeIcon onClick={nextSlide} className="carousel_btn carousel_btn--next fa-5x" icon={faChevronRight} />
+      {lengthImg ? (
+        <div>
+         <FontAwesomeIcon onClick={prevSlide} className="carousel_btn carousel_btn--prev fa-5x" icon={faChevronLeft} />
+        <FontAwesomeIcon onClick={nextSlide} className="carousel_btn carousel_btn--next fa-5x" icon={faChevronRight} />
+        </div>
+      ):('')}
+    
     </div>
   );
 };

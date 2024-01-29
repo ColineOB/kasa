@@ -13,11 +13,11 @@ function Logement() {
     const [searchParams] = useSearchParams();
     const id = searchParams.get("id");
     let appartement = jsonData.find(el => el.id === id);
-    const tags = appartement.tags;
 
     if (appartement === undefined || appartement === null) {
         return <Navigate to='/404error'element={<Error />} />
     }
+    const tags = appartement.tags;
     const rate = []
     let rateVoid = 5 - appartement.rating;
     for (let i = 0; i < appartement.rating ; i++) {

@@ -12,10 +12,16 @@
     display: flex;
     list-style: none;
 }
-
-.header-menu a,.header-menu a:visited,.header-menu a:hover{
-  text-decoration: none; 
+.header-menu li {
   color: black;
   margin-left: 40px;
   font-size: 24px;
+}
+.underligne {
+    text-decoration: underline;
+}
+
+.header-menu a,.header-menu a:visited,.header-menu a:hover{
+  text-decoration: none;
+  color: black;
 }
