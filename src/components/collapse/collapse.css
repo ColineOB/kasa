@@ -52,3 +52,21 @@
     max-height: 0;
     overflow: hidden;
 }
+
+@media screen and (max-width: 800px) {
+    .collapse {
+        width: 100%;
+        
+    }
+
+}
+
+@media screen and (max-width: 550px) {
+    .collapse-title h2 {
+        font-size: 13px;
+    }
+    .collape-arrow {
+        
+        width: 16px;
+    }
+}

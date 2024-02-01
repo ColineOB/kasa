@@ -33,3 +33,29 @@
     font-size: 18px;
     color: white;
 }
+
+
+@media screen and (max-width: 800px) {
+    .card {
+        height: 255px;
+        width: 48%;
+    }
+    
+    .card img {
+        height: 255px;
+    }
+    
+    .gradient {
+        height: 255px;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .card {
+        width: 100%;
+    }
+    
+    .card p{
+        font-size: 18px;
+    }
+}

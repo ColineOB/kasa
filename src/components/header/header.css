@@ -1,6 +1,7 @@
 .header {
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 
 .header-logo {
@@ -16,6 +17,8 @@
   color: black;
   margin-left: 40px;
   font-size: 24px;
+  white-space: nowrap;
+    overflow: hidden;
 }
 .underligne {
     text-decoration: underline;
@@ -24,4 +27,28 @@
 .header-menu a,.header-menu a:visited,.header-menu a:hover{
   text-decoration: none;
   color: black;
+}
+
+
+
+@media screen and (max-width: 800px) {
+  
+  .header-menu li {
+    margin: 0 10px 0 10px;
+  }
+
+  .header-menu {
+    padding: 0 0 0 0;
+    margin: 0 0 0 2%;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .header-menu li {
+    font-size: 12px;
+  }
+  
+.header-logo {
+  width: 145px;
+}
 }

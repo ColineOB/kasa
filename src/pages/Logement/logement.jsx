@@ -35,22 +35,23 @@ function Logement() {
             <div>
                 <h1>{appartement.title}</h1>
                 <h2>{appartement.location}</h2>
+                <div className='rating_tags'>
+                {tags.map((tag, index) => (
+                    <p className='rating_tags--tag' key={index}>{tag}</p>
+                ))}
+                </div>
             </div>
-            <div className='profil_G'>
-                <p className='profil_G--name'>{appartement.host.name}</p>
-                <img className='profil_G--imgProfil' src={appartement.host.picture} alt={appartement.host.name} />
+            <div className='profil-rate'>
+                <div className='profil_G'>
+                    <p className='profil_G--name'>{appartement.host.name}</p>
+                    <img className='profil_G--imgProfil' src={appartement.host.picture} alt={appartement.host.name} />
+                </div>
+                
+                <div className='rating_rate'>
+                        {rate}
+                </div>
             </div>
-        </div>
-
-        <div className='rating'>
-            <div className='rating_tags'>
-            {tags.map((tag, index) => (
-                <p className='rating_tags--tag' key={index}>{tag}</p>
-            ))}
-            </div>
-            <div className='rating_rate'>
-                {rate}
-            </div>
+            
         </div>
         <div className='collapses'>
         <Collapse title="Description" text={appartement.description} />

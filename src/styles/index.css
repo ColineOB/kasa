@@ -22,6 +22,9 @@ body {
   border-radius: 25px;
   flex-wrap: wrap;
 }
+
+/* logement */
+
 .profil {
   display: flex;
   justify-content: space-between;
@@ -39,12 +42,15 @@ body {
   font-size: 18px;
   margin: 10px 0 0 0;
   font-weight: initial;
+  color: black;
 }
 
 .profil_G {
   align-items: center;
   display: flex;
   font-size: 18px;
+  margin-bottom: 10px;
+  justify-content: flex-end;
 }
 .profil_G--name {
   width: 100px;
@@ -69,6 +75,9 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+.rating_rate {
+  min-width: 185px;
 }
 
 .rating_tags {
@@ -118,4 +127,63 @@ body {
   color: black;
   font-size: 18px;
   margin: 0 0 50px 0;
+}
+
+@media screen and (max-width: 800px) {
+  .profil {
+    display: block;
+  }
+  .profil-rate {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .profil h1 {
+    font-size: 18px;
+  }
+  .collapses {
+    display: block;
+  }
+  .star {
+    width: 25px;
+  }
+  .rating_tags--tag {
+    font-size: 10px;
+    padding: 2px 15px;
+  }
+  .rating_rate {
+    min-width: 140px;
+  }
+  .profil_G {
+    font-size: 12px;
+  }
+  .error h1 {
+    font-size: 180px;
+  }
+  .error p {
+    font-size: 25px;
+  }
+  .error a {
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .content {
+    font-size: 18px;
+  }
+  .star {
+    width: 18px;
+  }
+  .error {
+    margin-bottom: 150px;
+  }
+  .error h1 {
+    font-size: 96px;
+  }
+  .error p {
+    font-size: 18px;
+  }
+
 }
