@@ -37,13 +37,17 @@
 }
 
   .collapse-text {
+    font-size: 18px;
+    font-weight: 400;
     transition: all 300ms;
     white-space: pre-line;
     opacity: 1;
     transform: translateY(0%);
     max-height: 500px;
   }
-
+  .collapse-text ul li{
+    list-style: none;
+  }
 .collapse-text_close {
     transition: all 300ms;
     opacity: 0;

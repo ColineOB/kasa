@@ -5,14 +5,14 @@ import jsonData from '../../Json/logements.json';
 function App() {
 
   return (
-    <>
+    <main>
       <Banner />
-      <div className='content'>
+      <section className='content'>
         {jsonData.map((logement) => (
             <Card key={logement.id} data={logement} />
         ))}
-      </div>
-    </>
+      </section>
+    </main>
   );
 }
 

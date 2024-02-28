@@ -5,7 +5,7 @@ import JsonData from "../../Json/aPropos.json"
 function APropos() {
 
   return (
-      <>
+      <main>
         <Banner />
         
         <div className='collapse'>
@@ -13,7 +13,7 @@ function APropos() {
         <Collapse key={aPropos.id} title={aPropos.title} text={aPropos.text} />
         ))}
         </div>
-      </>
+      </main>
     );
   }
   

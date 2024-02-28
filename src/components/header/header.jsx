@@ -14,14 +14,14 @@ function Header() {
     }
 
     return (
-        <div className='header'>
+        <header className='header'>
             <img className='header-logo' src={Logo} alt='Logo' />
             <ul className='header-menu'>
                 <li>{menuPath('/','Accueil')}</li>
                 <li>{menuPath('/aPropos','A Propos')}</li>
             </ul>
 
-        </div>
+        </header>
     )
 }
  

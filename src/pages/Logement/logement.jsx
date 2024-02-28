@@ -18,14 +18,14 @@ function Logement() {
     }
 
     return (
-        <>
+        <main>
             <Carousel images={appartement.pictures} />
             <Profil appartement={appartement} />
             <div className='collapses'>
                 <Collapse title="Description" text={appartement.description} />
                 <Collapse title="Équipements" text={appartement.equipments} />
             </div>
-        </>
+        </main>
     )
 }
 

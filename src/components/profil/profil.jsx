@@ -4,7 +4,7 @@ function Profil({appartement}) {
     const tags = appartement.tags;
 
     return (
-        <div className='profil'>
+        <section className='profil'>
             <div>
                 <h1>{appartement.title}</h1>
                 <h2>{appartement.location}</h2>
@@ -22,7 +22,7 @@ function Profil({appartement}) {
                 
                 <Rate rating={appartement.rating} />
             </div>
-        </div>
+        </section>
     )
 }
 

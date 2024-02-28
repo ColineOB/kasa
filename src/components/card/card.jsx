@@ -7,13 +7,13 @@ function Card(props) {
     const id = props.data.id;
 
     return (
-        <div className='card'>
+        <article className='card'>
         <Link to={"/logement?id="+ id}>
             <img src={cover} alt="cover" />
             <div className='gradient'></div>
             <p>{title}</p>
         </Link>
-        </div>
+        </article>
     )
 }
  
