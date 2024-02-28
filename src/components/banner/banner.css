@@ -19,6 +19,17 @@
     z-index: 10;
 }
 
+.banner-container_apropos {
+    position: absolute;
+    border-radius: 25px;
+    background-image: url('../../assets/fond2.jpg');
+    width: 100%;
+    height: 210px;
+    background-position: center;
+    background-size: cover;
+    z-index: 10;
+}
+
 .banner-filter {
     position: absolute;
     border-radius: 25px;
